@@ -28,7 +28,7 @@ import util.dump.io.IOUtils;
 /**
  * Using Compression enum values in StreamProviders you can compress your dumps transparently.
  *
- * With <code>Compression.LZ4</code> there is a option for very fast
+ * With <code>Compression.LZ4</code> there is an option for very fast
  * compression, where one might expect, that performance improves overall, simply because you do less IO.
  * Unfortunately, in a single-threaded use-case with no other IO load this is not the case, even when using 
  * the fastest option, LZ4. Externalization creates high load on CPU, compression increases that load. 
